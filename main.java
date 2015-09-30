@@ -36,7 +36,20 @@ public class Main {
 		//String end = "money";
 		//getWordLadder(start, end);
 		
-		// TODO methods to read in words, output ladder
+		
+		String cmd = "initializer";
+		//kb.useDelimiter(" ");
+		System.out.println(kb.delimiter());
+		while(true){
+			
+			//terminate program
+			cmd = kb.next();
+			if(cmd.equals("/quit")) break;
+			if(cmd.startsWith("/")) System.out.println("invalid command " + cmd);
+			System.out.println(cmd);
+				
+			
+		}
 
 	}
 	
